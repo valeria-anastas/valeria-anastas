@@ -8,33 +8,33 @@
 
 ## Проекты
 
-### [A/B-тест лендинга](projects/ab-landing-page/README.md)
+### [A/B-тест лендинга](https://github.com/valeria-anastas/ab-landing-page)
 
 Проверила, помогает ли новая версия страницы повысить конверсию. Подготовила данные, разобралась с группами эксперимента и сравнила результаты с помощью статистических тестов и bootstrap.
 
 **Итог:** значимого улучшения не обнаружила. Здесь важен не только p-value, но и умение не делать слишком уверенных выводов из неоднозначных данных.
 
-[Код и результаты](projects/ab-landing-page/ab_landing_page_analysis.ipynb)
+[Код и результаты](https://github.com/valeria-anastas/ab-landing-page/blob/main/ab_landing_page_analysis.ipynb)
 
-### [Статистический анализ рынка аренды](projects/rental-market-statistics/README.md)
+### [Статистический анализ рынка аренды](https://github.com/valeria-anastas/rental-market-statistics)
 
 Исследовала объявления о недвижимости: как связаны цена, площадь, количество спален и удобства. Проверила несколько гипотез и посмотрела, какие различия действительно подтверждаются данными.
 
-[Код и результаты](projects/rental-market-statistics/rental_market_analysis.ipynb)
+[Код и результаты](https://github.com/valeria-anastas/rental-market-statistics/blob/main/rental_market_analysis.ipynb)
 
-### [Netflix: исследование каталога](projects/netflix-eda/README.md)
+### [Netflix: исследование каталога](https://github.com/valeria-anastas/netflix-eda)
 
 Командный проект, в котором мы изучали каталог Netflix: очищали данные, сравнивали оценки, жанры, страны и годы выпуска. Отдельно работали с LLM-классификацией предполагаемой аудитории — с пониманием, что оценки модели не заменяют данные о реальных зрителях.
 
-[Notebook с графиками](projects/netflix-eda/netflix_eda.ipynb)
+[Notebook с графиками](https://github.com/valeria-anastas/netflix-eda/blob/main/netflix_eda.ipynb)
 
-### [Как заинтересовать молодёжь инвестициями в недвижимость](projects/cup-russia-zpif/README.md)
+### [Как заинтересовать молодёжь инвестициями в недвижимость](https://github.com/valeria-anastas/cup-russia-zpif)
 
 Кейс **Changellenge Cup Russia 2026**, команда *digital baboons*. Мы искали способ сделать ЗПИФ недвижимости понятнее молодой аудитории: изучали барьеры, сравнивали продукты и предложили стратегию привлечения.
 
 Моя роль в команде — продуктовый аналитик.
 
-[Презентация команды](projects/cup-russia-zpif/digital_baboons_case_presentation.pdf) · [Разбор кейса](projects/cup-russia-zpif/README.md)
+[Презентация команды](https://github.com/valeria-anastas/cup-russia-zpif/blob/main/digital_baboons_case_presentation.pdf) · [Разбор кейса](https://github.com/valeria-anastas/cup-russia-zpif)
 
 ## Чем работаю
 
