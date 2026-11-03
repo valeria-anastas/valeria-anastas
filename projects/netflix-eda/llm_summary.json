@@ -1,0 +1,82 @@
+{
+  "metadata": {
+    "catalog_rows": 7787,
+    "llm_rows": 8807,
+    "llm_valid_age": 8332,
+    "llm_error_flagged": 438,
+    "llm_missing_in_catalog": 1020,
+    "rating_rows": 320,
+    "rating_unique_rows": 126
+  },
+  "age_counts": {
+    "18–24": 4855,
+    "under 12": 928,
+    "13–17": 920,
+    "35–49": 730,
+    "25–34": 586,
+    "50+": 298,
+    "other_or_missing": 490
+  },
+  "gender_counts": {
+    "neutral": 7327,
+    "male": 659,
+    "female": 383,
+    "missing": 438
+  },
+  "genre_age_counts": [
+    {
+      "genre": "Action & Adventure",
+      "13–17": 145,
+      "18–24": 661,
+      "25–34": 9,
+      "35–49": 16,
+      "50+": 3,
+      "under 12": 7
+    },
+    {
+      "genre": "Comedies",
+      "13–17": 180,
+      "18–24": 1000,
+      "25–34": 83,
+      "35–49": 119,
+      "50+": 26,
+      "under 12": 190
+    },
+    {
+      "genre": "Documentaries",
+      "13–17": 44,
+      "18–24": 337,
+      "25–34": 88,
+      "35–49": 179,
+      "50+": 113,
+      "under 12": 26
+    },
+    {
+      "genre": "Dramas",
+      "13–17": 222,
+      "18–24": 1417,
+      "25–34": 215,
+      "35–49": 292,
+      "50+": 51,
+      "under 12": 39
+    },
+    {
+      "genre": "International Movies",
+      "13–17": 239,
+      "18–24": 1806,
+      "25–34": 212,
+      "35–49": 248,
+      "50+": 76,
+      "under 12": 26
+    },
+    {
+      "genre": "International TV Shows",
+      "13–17": 171,
+      "18–24": 827,
+      "25–34": 134,
+      "35–49": 91,
+      "50+": 49,
+      "under 12": 13
+    }
+  ]
+}
