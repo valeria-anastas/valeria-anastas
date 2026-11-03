@@ -41,7 +41,7 @@
 
 **Опубликован второй проект — [Статистический анализ рынка аренды](projects/rental-market-statistics/README.md)**
 
-Исследование наблюдательных данных: Welch ANOVA, Games–Howell, χ²-критерий, t-тест Уэлча и bootstrap. [Открыть Notebook](projects/rental-market-statistics/rental_market_analysis.ipynb). Исходный CSV пока не опубликован.
+Исследование наблюдательных данных: Welch ANOVA, Games–Howell, χ²-критерий, t-тест Уэлча и bootstrap. [Открыть Notebook](projects/rental-market-statistics/rental_market_analysis.ipynb). Обезличенный CSV из 9 531 объявления опубликован вместе с Notebook.
 
 **Следующие работы в подготовке:** EDA Netflix, хранилище данных на SQL/dbt, моделирование бизнес-процессов. Ссылки появятся после публикации исходных файлов и описаний задач.
 
