@@ -40,10 +40,10 @@
 
 ## Как запустить
 
-1. Скачайте папку проекта либо клонируйте репозиторий.
-2. Установите зависимости: `pip install -r requirements.txt`.
-3. Откройте `ab_landing_page_analysis.ipynb` в Jupyter Notebook или VS Code.
-4. Выполните все ячейки по порядку. Файл `data_ab.csv` уже лежит рядом с Notebook.
+1. Клонируйте репозиторий `git clone https://github.com/valeria-anastas/valeria-anastas.git` или скачайте папку проекта.
+2. Перейдите в каталог `cd valeria-anastas/projects/ab-landing-page` (при клонировании).
+3. Установите зависимости: `pip install -r requirements.txt`.
+4. Откройте `ab_landing_page_analysis.ipynb` в Jupyter Notebook или VS Code и выполните ячейки по порядку. `data_ab.csv` лежит рядом с Notebook.
 
 ## Ограничения
 
