@@ -1,0 +1,29 @@
+name: Собрать исходный CSV A/B-теста
+on:
+  push:
+    paths:
+      - 'projects/ab-landing-page/.data-parts/**'
+permissions:
+  contents: write
+jobs:
+  assemble:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Собрать и проверить оригинальный файл
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat projects/ab-landing-page/.data-parts/part{0..5} > projects/ab-landing-page/data_ab.csv
+          printf '\n' >> projects/ab-landing-page/data_ab.csv
+          test "$(wc -l < projects/ab-landing-page/data_ab.csv)" -eq 294479
+          test "$(wc -c < projects/ab-landing-page/data_ab.csv)" -eq 15901933
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add projects/ab-landing-page/data_ab.csv
+          git rm -r projects/ab-landing-page/.data-parts
+          git rm .github/workflows/assemble_ab_csv.yml
+          git commit -m "Опубликовать полный исходный CSV для A/B-анализа"
+          git push
