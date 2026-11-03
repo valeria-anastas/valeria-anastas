@@ -1,0 +1,39 @@
+name: Execute Netflix notebook and commit outputs
+on:
+  push:
+    paths:
+      - 'projects/netflix-eda/netflix_eda.ipynb'
+      - 'projects/netflix-eda/catalog_part_*.csv'
+      - 'projects/netflix-eda/netflix_shows.csv'
+      - 'projects/netflix-eda/rating_sample.csv'
+      - 'projects/netflix-eda/llm_summary.json'
+      - '.github/workflows/execute-netflix.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  execute:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r projects/netflix-eda/requirements.txt nbconvert ipykernel
+      - name: Execute and save notebook outputs
+        working-directory: projects/netflix-eda
+        run: |
+          jupyter nbconvert --to notebook --execute --inplace netflix_eda.ipynb --ExecutePreprocessor.timeout=600
+      - name: Commit rendered notebook
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add projects/netflix-eda/netflix_eda.ipynb
+          git diff --cached --quiet || (git commit -m "Save Netflix EDA outputs and plots" && git push)
